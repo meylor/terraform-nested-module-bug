@@ -2,7 +2,7 @@
 
 ## Overview
 
-I believe this is a bug involving nested modules in Terraform ( https://www.terraform.io/docs/modules/create.html ). I've details the error that I'm seeing and the steps to reproduce the error below.
+I believe this is a bug involving nested modules in Terraform ( https://www.terraform.io/docs/modules/create.html ). I've detailed the error that I'm seeing and the steps to reproduce the error below.
 
 
 ## Steps to reproduce
