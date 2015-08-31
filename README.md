@@ -25,7 +25,7 @@ I believe this is a bug involving nested modules in Terraform ( https://www.terr
 ```
 10. Run ```terraform plan``` to see the same error that I'm seeing below.
 ```
-meylor@meylor:~/infra/test$ terraform plan
+meylor@meylor:~/terraform-nested-module-bug$ terraform plan
 There are warnings and/or errors related to your configuration. Please
 fix these before continuing.
 
