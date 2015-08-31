@@ -7,7 +7,7 @@ I believe this is a bug involving nested modules in Terraform ( https://www.terr
 
 ## Steps to reproduce
 1. Clone https://github.com/meylor/terraform-nested-module-bug.git
-2. Edit terraform-nested-module-bug/terraform.tfvars to add AWS keys and the name of your SSH key
+2. Edit terraform-nested-module-bug/terraform.tfvars to add AWS keys.
 3. Make sure that map.tf isn't using overlapping address space as your current infrastructure
 4. Set your AWS_REGION in an environment variable ```export AWS_REGION=us-west-1```
 5. Run ```terraform get``` to get the modules
