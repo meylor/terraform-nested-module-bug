@@ -4,8 +4,9 @@
 
 I believe this is a bug involving nested modules in Terraform ( https://www.terraform.io/docs/modules/create.html ). I've detailed the error that I'm seeing and the steps to reproduce the error below.
 
-
 ## Steps to reproduce
+* Using Terraform v0.6.3
+
 1. Clone https://github.com/meylor/terraform-nested-module-bug.git
 2. Edit terraform-nested-module-bug/terraform.tfvars to add AWS keys.
 3. Make sure that map.tf isn't using overlapping address space as your current infrastructure
