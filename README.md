@@ -9,11 +9,13 @@ I believe this is a bug involving nested modules in Terraform ( https://www.terr
 1. Clone https://github.com/meylor/terraform-nested-module-bug.git
 2. Edit terraform-nested-module-bug/terraform.tfvars to add AWS keys and the name of your SSH key
 3. Make sure that map.tf isn't using overlapping address space as your current infrastructure
-4. Run ```terraform plan``` to see the resources that will be generated
-5. Run ```terraform apply``` to generate the resources.
+4. Set your AWS_REGION in an environment variable ```export AWS_REGION=us-west-1```
+5. Run ```terraform get``` to get the modules
+6. Run ```terraform plan``` to see the resources that will be generated
+7. Run ```terraform apply``` to generate the resources.
 ** This will call a .tf state that will call a parent module, then a child module
-6. The resources will be provisioned correctly
-7. in terraform-nested-module-bug/test.tf comment out the following section:
+8. The resources will be provisioned correctly
+9. in terraform-nested-module-bug/test.tf comment out the following section:
 ```
 #module "test" {
 #  source = "./modules/parent"
@@ -21,7 +23,7 @@ I believe this is a bug involving nested modules in Terraform ( https://www.terr
 #  env = "${var.env}"
 #}
 ```
-8. Run ```terraform plan``` to see the same error that I'm seeing below.
+10. Run ```terraform plan``` to see the same error that I'm seeing below.
 ```
 meylor@meylor:~/infra/test$ terraform plan
 There are warnings and/or errors related to your configuration. Please
