@@ -2,7 +2,11 @@
 
 ## Overview
 
-There is a bug involving nested modules in Terraform ( https://www.terraform.io/docs/modules/create.html ). I've detailed the error that I'm seeing and the steps to reproduce the error below. The corresponding issue is located at https://github.com/hashicorp/terraform/issues/3114
+There is a bug involving nested modules in Terraform ( https://www.terraform.io/docs/modules/create.html ). I've detailed the error that I'm seeing and the steps to reproduce the error below. 
+
+## Issue
+
+The corresponding issue is located at https://github.com/hashicorp/terraform/issues/3114
 
 ## Steps to reproduce
 * Using Terraform v0.6.3
